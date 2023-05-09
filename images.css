@@ -1,7 +1,6 @@
  /*test image css*/
- .birthday-image {
+ .birthday-image0 {
     width: 300px;
-    height: 180px;
     margin-left: 10px;
     position: relative;
   overflow: hidden;
@@ -9,3 +8,14 @@
   position: absolute;
   transform: skewX(2deg);
 }
+.birthday-image1 {
+  width: 250px;
+  margin-left: 10px;
+  position: absolute;
+  top: 363px;
+  left: 50px;
+}
+
+
+
+
