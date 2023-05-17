@@ -131,7 +131,9 @@ body {
      margin: 40px;
      color: #333;
    }
-   
+   .cardInside .back{
+    font-family: "CoffeCake", sans-serif;
+   }
    .name {
      position: absolute;
      left:150px;
