@@ -7,7 +7,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
    }
    
    h2 {
@@ -17,34 +16,34 @@ body {
    }
    
    .birthdayCard {
-     position: relative;
-     width: 250px;
-     height:350px;
-     cursor: pointer;
-     transform-style: preserve-3d;
-       transform: perspective(2500px);
-     transition: 1s;
-   }
+    position: relative;
+    width: 700px;
+    height: 850px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+  }
    
-   .cardFront {
-     position: relative;
-     background-color: #fff;
-     width: 250px;
-     height:350px;
-     overflow: hidden;
-     transform-origin: left;
-     box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
-     transition: .6s;
-   }
+  .cardFront {
+    position: relative;
+    background-color: #fff;
+    width: 700px;
+    height: 850px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
+    transition: .6s;
+  }
    
    .happy {
-     font-family: Tahoma, sans-serif;
+     font-family: 'CoffeCake', sans-serif;
      text-align: center;
      margin:30px; 
-     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+     background-image: linear-gradient(120deg, #57bae8 0%, #85dbfdab 100%);
      transition: .1s;
    }
-     
+/*      
      .balloons {
      position: absolute;
    }
@@ -114,25 +113,27 @@ body {
    .balloonFour:after {
      border-bottom: 10px solid #118ab2;
    }
-   
+    */
    .cardInside {
-     position: absolute;
-     background-color: #fff;
-     border: 2px solid yellowgreen;
-     width: 250px;
-     height:350px;
-     z-index:-1;
-     left:0;
-     top:0;
-     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
-   }
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid rgb(50, 148, 205);
+    width: 700px;
+    height: 850px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
    
-   p {
-     font-family: cursive;
+   .cardInside p {
+     font-family: "CoffeCake", sans-serif;
      margin: 40px;
      color: #333;
    }
-   
+   .cardInside .back{
+    font-family: "CoffeCake", sans-serif;
+   }
    .name {
      position: absolute;
      left:150px;
@@ -163,28 +164,4 @@ body {
      visibility:hidden; 
    }
    
-   @keyframes blink {
-    0% {
-     color: white;
-    }
-   
-    20% {
-     color: yellow;
-    }
-   
-    40% {
-     color: greenyellow;
-    }
-   
-    60% {
-     color: red;
-    }
-   
-    80% {
-     color: hotpink;
-    }
-   
-    100% {
-     color: blue;
-    }
-   }
+  
