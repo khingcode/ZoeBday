@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'CoffeeCake';
+    src: url('path/to/font/CoffeCake.ttf') format('truetype'),
+         url('path/to/font/CoffeCake.woff') format('woff'),
+         url('path/to/font/CoffeCake.otf') format('opentype');
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+body{
+    font-family: 'CoffeCake', sans-serif;
+    background-color: #80471cb3;
+    background-image: url(../images/brownbackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+header {
+    background-color: #E5D3B3; /* coral header background */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    height: 55px;
+  }
+  nav ul h1{
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav ul{
+    float: left;
+    padding: 0px 20px;
+  }
+  header nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+  }
+  header nav ul li a{ /*Edits the text of the list */
+    color: black;
+    display: block;
+    font-size: 22px;
+    padding: 16px 14px;
+    text-decoration: none;
+  }
+  
+  header nav ul li ul{
+    color: black;
+    display: none;
+    position: absolute;
+    background-color: #E5D3B3; /* coral header background */
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+  } 
+  header nav ul li:hover ul{
+    display: block;
+  } 
+  header nav ul li ul li {
+    width: 165px;
+    border-radius: 4px;
+  }
+  header nav ul li ul li a{
+    text-align: left;
+    padding: 8px 13px;
+  }
+  header nav ul li ul li a:hover{
+    background-color: #ba8934;
+
+  }  
+
+  .desc p{
+    text-align: center;
+    background-color: #e5d3b3ba;
+    margin: 0px 299px;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+    position: relative;
+  }
+  .desc h1{
+    text-align: center;
+    background-color: #e5d3b3ba;
+    margin: 50px 299px 0px 299px;
+    font-size: 100px;
+  }
+
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    perspective: 800px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%; /*remove to make it a square*/
+    overflow: hidden;
+    margin: 10px 0px 0px 300px; /*top right bottom left*/
+  }
+  .box {
+    width: 450px;
+    height: 250px;
+    perspective: 800px;
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 50%; remove to make it a square */
+    overflow: hidden;
+    margin: 20px 30px 10px 344px;
+  }
+  .circle1 {
+    width: 250px;
+    height: 250px;
+    perspective: 800px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%; /*remove to make it a square*/
+    overflow: hidden;
+    margin: 100px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  /*adding front image*/
+  .circle .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a43c3c;
+    background-image: url(../images/coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /*remove to make it a square*/
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .box .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #a43c3c;
+    background-image: url(../images/coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /*remove to make it a square*/
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle1 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(../images/coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  /* Adding back image */
+  .circle .back {
+    transform: rotateY(-180deg);
+    background-image: url(../images/vernon1.jpg);
+  }
+  .box .back{
+    transform: rotateY(-180deg);
+    background-image: url(../images/zoe2.jpg);
+    
+  }
+  .circle1 .back{
+    transform: rotateY(-180deg);
+    background-image: url();
+  }
+
+  
+  /* hover effect for circles/cards*/
+  .circle:hover .wrapper {
+    transform: rotateY(180deg);
+  }
+  .box:hover .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle1:hover .wrapper {
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+  footer {
+    background-color: #E5D3B3; /* coral footer background */
+    color: rgb(10, 13, 15);
+    text-align: left;
+    padding: 15px;
+    margin-top: 50px;
+  }
