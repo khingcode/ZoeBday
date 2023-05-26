@@ -26,20 +26,20 @@ header {
     width: 100%;
     height: 55px;
   }
-  nav ul h1{
+nav ul h1{
     align-items: center;
     justify-content: space-between;
   }
-  header nav ul{
+header nav ul{
     float: left;
     padding: 0px 20px;
   }
-  header nav ul li{
+header nav ul li{
     float: left;
     list-style: none;
     position: relative;
   }
-  header nav ul li a{ /*Edits the text of the list */
+header nav ul li a{ /*Edits the text of the list */
     color: black;
     display: block;
     font-size: 22px;
@@ -47,7 +47,7 @@ header {
     text-decoration: none;
   }
   
-  header nav ul li ul{
+header nav ul li ul{
     color: black;
     display: none;
     position: absolute;
@@ -55,18 +55,61 @@ header {
     padding: 10px;
     border-radius: 0px 0px 6px 6px;
   } 
-  header nav ul li:hover ul{
+header nav ul li:hover ul{
     display: block;
   } 
-  header nav ul li ul li {
+header nav ul li ul li {
     width: 165px;
     border-radius: 4px;
   }
-  header nav ul li ul li a{
+header nav ul li ul li a{
     text-align: left;
     padding: 8px 13px;
   }
-  header nav ul li ul li a:hover{
+header nav ul li ul li a:hover{
     background-color: #FFFACC;
-
   }  
+.desc {
+  text-align: center;
+  margin: 44px 222px 50px 222px;
+  font-size: 40px;
+  background-color: #fffacc8c;
+  padding: 30px;
+  border-radius: 34px;
+}
+/* .desc h1{
+  text-align: center;
+} */
+.desc p{
+  margin: 40px 0px 0px 0px;
+  line-height: 42px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align content to the top */
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+}
+
+.container img {
+  margin: 75px; /* Add spacing between images */
+   /* Ensure images don't exceed container width */
+}
+
+
+
+footer {
+  background-color: #FBE488; /* coral footer background */
+  color: rgb(10, 13, 15);
+  text-align: left;
+  padding: 15px;
+  margin-top: 50px;
+}

@@ -5,4 +5,8 @@
     bottom: -10px;
     left: 5px;
   }
-  
+
+ .isfp,.infp,.infj,.intp,.istp,.enfp,.intj,.istj{
+  margin-top: 100px;
+  max-width: 1000px;
+  }
